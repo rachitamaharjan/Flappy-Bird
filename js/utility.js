@@ -129,6 +129,10 @@ function storeHighScore(){
     if(player.highScore > window.localStorage.getItem('highScore') ){
         localStorage.setItem('highScore', player.highScore);
     }
+    if(window.localStorage.getItem('highScore') == null){
+        localStorage.setItem('highScore', 0);
+    }
+
 }
 
 function getHighScore(){
