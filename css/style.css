@@ -14,12 +14,10 @@
 }
 
 #base{
-    /* background-image: url('../assets/base.png');
-    position: absolute;
-    bottom: 0;
-    height: 112px;
-    width: 100%;
-    left: 0; */
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 90px;
+    font-weight: 900;
 }
 
 
@@ -38,7 +36,7 @@
 .pop-up{
     border-radius: 15px;
     line-height: 25px;
-    transform: translateY(25%);    
+    transform: translateY(10%);    
     padding: 20px;
     text-align: center;
     color: white;
@@ -137,7 +135,7 @@
     line-height: 35px;
     color: maroon;
     font-weight: 900;
-    transform: translateY(75%);
+    transform: translateY(100%);
 }
 
 

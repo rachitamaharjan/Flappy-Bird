@@ -11,6 +11,7 @@ var player = { playing: false, score: 0, speed: 5, gravity: 0.5, velocity: 0, up
 var pointsBefore = player.score
 var score = document.getElementById('score')
 var popUp = document.getElementsByClassName('pop-up')
+var base = document.getElementById('base')
 var playerBird =  document.createElement('div')
 playerBird.className = 'player-bird'
 playerBird.y = playerBird.offsetTop
@@ -21,6 +22,7 @@ var blockerPipes = document.getElementsByClassName('blocker-pipes')
 var startGame = popUp[0].addEventListener('click', function(){
 
     popUp[0].id = 'invisible'
+    base.style.display = 'none'
     player.speed = 5
     gameArea.innerHTML = ''
     player.playing = true
@@ -36,8 +38,8 @@ var startGame = popUp[0].addEventListener('click', function(){
 
 // click and press event listeners
 mainContainer[0].addEventListener('click', flapUp)
-
 document.addEventListener('keypress', flapUp)
+
 function flapUp(e){
     bird.goingUp = true
     bird.goingDown = false
