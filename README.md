@@ -17,7 +17,7 @@
 
 
 
-## [Live Demo](https://smilerac.github.io/Flappy-Bird)
+## [Live Demo](https://rachitamaharjan.github.io/Flappy-Bird)
 
 ## Built With
 
